@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="FirstServlet" method="post">
+<table>
+<tr>
+<td>Name</td>
+<td><input type="text" name="username"></td>
+</tr>
+
+<tr>
+<td>Courses</td>
+<td><select name="Courses"></td>
+<td><option>JAVA BEGINNER</option></td>
+<td><option>JAVA ADVANCE</option></td>
+<td><option>JAVA FRAMEWORD</option></td>
+<td><option>JAVA EE</option></td>
+<td></select></td>
+</tr>
+
+<tr>
+<td><input type="text" value="Submit"></td>
+
+</tr>
+
+
+
+</table>
+</form> 
+</body>
+</html>

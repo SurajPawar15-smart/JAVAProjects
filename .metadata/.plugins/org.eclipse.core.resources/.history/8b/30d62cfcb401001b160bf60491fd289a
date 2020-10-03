@@ -1,0 +1,38 @@
+package mypack;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+public class XmlServlet extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			//System.out.println("XML servlet called");
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		
+		String username=request.getParameter("username");
+		out.println("Hello"+username);
+		
+}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String username=request.getParameter("username");
+		PrintWriter out1=response.getWriter();
+		out1.println("Hello"+username);
+		super.doPost(req, resp);
+	}
+}
+//output
+//http://localhost:8080/JBSimpleServletProject/XmlServlet
+//XML servlet called
+
+//or
+//post method passing:
+//http://localhost:8080/JBSimpleServletProject/XMLServletpath?usrename=suraj

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="020Servlet performance to fetch records">
+        <property name="context-root" value="020Servlet_performance_to_fetch_records"/>
+        <property name="java-output-path" value="/020Servlet performance to fetch records/build/classes"/>
+    </wb-module>
+</project-modules>

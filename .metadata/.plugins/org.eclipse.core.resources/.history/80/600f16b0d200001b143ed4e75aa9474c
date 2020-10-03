@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" method="post">
+<table>
+<tr>
+<td>EmployeeName</td>
+<td><input type="text" name="employeeName"></td>
+</tr>
+<tr>
+<td>EmployeeAddress</td>
+<td><input type="text" name="address"></td>
+</tr>
+<tr>
+<td><input type="submit" value="Click"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

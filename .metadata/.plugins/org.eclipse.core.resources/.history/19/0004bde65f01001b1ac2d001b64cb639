@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body{
+background-color:lightblue;
+}
+table{
+border:1;
+}
+</style>
+</head>
+<body>
+<h1>REGISTRATION FORM</h1>
+<form action="FirstServlet" method="Post">
+<table>
+
+<tr>
+<td>Name:</td>
+<td><input type="text" name="uname"></td>
+</tr>
+
+<tr>
+<td>Email:</td>
+<td><input type="email" name="uemail"></td>
+</tr>
+
+<tr>
+<td>Course:</td>
+<td><select name="course">
+<option>Select Your Course</option>
+<option>Java Beginning</option>
+<option>Java Advance</option>
+<option>Java EE</option>
+<option>Java Framework</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><input type="submit" value="Submit"></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

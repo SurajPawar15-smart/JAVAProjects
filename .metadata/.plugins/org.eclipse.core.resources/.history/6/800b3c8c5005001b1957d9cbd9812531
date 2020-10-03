@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="022Sending email through JavaMail">
+        <property name="context-root" value="022Sending_email_through_JavaMail"/>
+    </wb-module>
+</project-modules>

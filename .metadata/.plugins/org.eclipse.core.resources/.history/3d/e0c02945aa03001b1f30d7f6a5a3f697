@@ -1,0 +1,8 @@
+package mypack;
+
+public class LoginService {
+
+	public boolean authenticate(String userId,String password){
+		
+	}
+}

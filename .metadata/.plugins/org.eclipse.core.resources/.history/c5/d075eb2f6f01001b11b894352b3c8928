@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body{
+background-color:green;
+}
+h1{
+color:red;
+}
+</style>
+</head>
+<body>
+<h1>Employee Registration Form</h1>
+<form action="SaveServlet" method="post">
+<table>
+
+<tr>
+<td>Name</td>
+<td><input type="text" name="ename"></td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td><input type="password" name="epassword"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="text" name="email"></td>
+</tr>
+
+<tr>
+<td>Country</td>
+<td><select>
+<option>Select Your Country</option>
+<option>India</option>
+<option>USA</option>
+<option>UAE</option>
+<option>US</option>
+<option>UnitedKingdom</option>
+<option>other</option>
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td><input type="submit" value="Click"></td>
+</tr>
+
+
+</table>
+</form>
+</body>
+</html>

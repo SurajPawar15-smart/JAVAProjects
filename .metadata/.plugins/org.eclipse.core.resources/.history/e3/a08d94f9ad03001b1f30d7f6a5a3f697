@@ -1,0 +1,23 @@
+package mypack;
+
+import java.util.HashMap;
+
+public class LoginService {
+    HashMap<String,String> users=new HashMap<String,String>();
+
+	public LoginService(){
+		users.put("Johndoe", "John Doe");
+		users.put("Johndoe", "Jane Doe");
+		users.put("Jguru", "JAVA Guru");
+	}
+	public boolean authenticate(String userId,String password){
+		if(password ==null ||password.trim() == ""){
+			return false;
+		}
+		return true;
+	}
+	public String getUsername(String userId){
+		return user.get(userId);
+	}
+	
+}

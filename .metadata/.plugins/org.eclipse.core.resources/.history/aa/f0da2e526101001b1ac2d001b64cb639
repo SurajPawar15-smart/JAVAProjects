@@ -1,0 +1,57 @@
+package mypack;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/FirstServlet")
+public class FirstServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    
+    public FirstServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		
+		PrintWriter out=response.getWriter();
+		String sname=request.getParameter("uname");
+		String semail=request.getParameter("uemail");
+		String scourse=request.getParameter("course");
+		out.println("<html><body>");
+		out.println("<h1>"+"Welcome to Upazle "+"</h1>");
+		out.println("<table>");
+		
+		out.println("<tr>");
+		out.println("<td>Name:</td>");
+		out.println("<td>"+sname+"</td>");
+		out.println("</td>");
+		
+		
+		
+		out.println("<tr>");
+		out.println("<td>Email:</td>");
+		out.println("<td>"+semail+"</td>");
+		out.println("</td>");
+		
+		
+		out.println("<tr>");
+		out.println("<td>Course:</td>");
+		out.println("<td>"+scourse+"</td>");
+		out.println("</td>");
+		
+		out.println("<table>");
+		out.close();
+		
+	}
+
+}

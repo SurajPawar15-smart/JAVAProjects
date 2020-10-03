@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ContextAttributeDemo">
+        <wb-resource deploy-path="/" source-path="/WebContent"/>
+        <property name="context-root" value="ContextAttributeDemo"/>
+        <property name="java-output-path" value="/ContextAttributeDemo/build/classes"/>
+    </wb-module>
+</project-modules>

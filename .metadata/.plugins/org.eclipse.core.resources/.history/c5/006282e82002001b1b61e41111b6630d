@@ -1,0 +1,16 @@
+package mypack;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+
+@WebServlet("/ServletOne")
+public class ServletOne extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    
+    public ServletOne() {
+        super();
+       
+    }
+
+}

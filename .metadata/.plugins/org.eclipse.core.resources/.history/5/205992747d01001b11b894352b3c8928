@@ -1,0 +1,52 @@
+package datapack;
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class EmplDao {
+	
+	public static Connection getConnection() 
+	{
+		Connection con = null;
+		try{
+			
+			Class.forName("com.mysql.jdbc.Driver");//loading the driver class
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/empbd1","root","root");
+		}
+		catch(ClassNotFoundException  e)
+		{
+			System.out.println(e);;
+		}
+		catch(SQLException e){
+			e.printStackTrace();
+	    }
+		return con;
+	}
+	public static int save(Employee e1)
+	{
+		int status=0;
+		//Employee em=new Employee();
+		
+		Connection con=EmplDao.getConnection();
+		try 
+		{
+			PreparedStatement ps=con.prepareStatement("insert into empreg(ename,epassword,email,ecountry)values(?,?,?,?)");
+			ps.setString(1,e1.getEname());
+			ps.setString(2,e1.getEpassword());
+			ps.setString(3,e1.getEmail());
+			ps.setString(4,e1.getEcountry());
+			
+			status=ps.executeUpdate();
+			
+			con.close();
+		} 
+		catch (SQLException e2) 
+		{
+			e2.printStackTrace();
+		}
+		return status;
+	}
+}

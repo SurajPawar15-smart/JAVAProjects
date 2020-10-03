@@ -1,0 +1,10 @@
+127.0.0.1 - - [26/Sep/2020:18:08:27 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Sep/2020:18:08:28 +0530] "GET /RequestDispatcherDemo/ HTTP/1.1" 404 777
+127.0.0.1 - - [26/Sep/2020:18:09:48 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Sep/2020:18:09:48 +0530] "GET /RequestDispatcherDemo/ HTTP/1.1" 404 777
+127.0.0.1 - - [26/Sep/2020:18:23:09 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Sep/2020:18:23:09 +0530] "GET /GetPostDifference/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Sep/2020:18:23:13 +0530] "GET /GetPostDifference/mypack.FirstServlet?username=suraj HTTP/1.1" 200 74
+0:0:0:0:0:0:0:1 - - [26/Sep/2020:18:23:15 +0530] "GET /GetPostDifference/SecondServlet?uname=suraj HTTP/1.1" 200 33
+0:0:0:0:0:0:0:1 - - [26/Sep/2020:18:23:27 +0530] "GET /RequestDispatcherDemo/ HTTP/1.1" 404 777
+0:0:0:0:0:0:0:1 - - [26/Sep/2020:18:25:25 +0530] "GET /RequestDispatcherDemo/ HTTP/1.1" 404 777

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="021Example of uploading file">
+        <property name="context-root" value="021Example_of_uploading_file"/>
+    </wb-module>
+</project-modules>

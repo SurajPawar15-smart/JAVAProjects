@@ -1,0 +1,10 @@
+package datapack;
+
+public class Employee {
+	private int id;
+	private  String ename;
+	private  String epassword;
+	private  String email;
+	private  String ecountry;
+
+}

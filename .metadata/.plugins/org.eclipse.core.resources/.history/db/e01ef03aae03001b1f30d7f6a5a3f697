@@ -1,0 +1,8 @@
+package mypack;
+
+public class User {
+	private String userName;
+	private String userId;
+	
+
+}

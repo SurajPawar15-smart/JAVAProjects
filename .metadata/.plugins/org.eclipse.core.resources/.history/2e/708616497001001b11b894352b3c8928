@@ -1,0 +1,23 @@
+package datapack;
+
+public class Employee {
+	
+	private int id;
+	private  String ename;
+	private  String epassword;
+	private  String email;
+	private  String ecountry;
+	
+	 public Employee() {
+		super();
+		}
+	 
+    public Employee(int id, String ename, String epassword, String email, String ecountry) {
+		super();
+		this.id = id;
+		this.ename = ename;
+		this.epassword = epassword;
+		this.email = email;
+		this.ecountry = ecountry;
+	}
+}

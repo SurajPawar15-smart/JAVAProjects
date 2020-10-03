@@ -1,0 +1,50 @@
+package mypack;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/FirstServlet")
+public class FirstServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+   
+    public FirstServlet() {
+        super();
+    }
+    
+   // @Override
+//	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//	response.setContentType("text/html");
+//	PrintWriter out=response.getWriter();
+//	
+//	String fname=request.getParameter("fname");
+//	String lname=request.getParameter("lname");
+//	System.out.println("My name is "+fname+" "+lname);
+//	System.out.println("This is From GET method");
+//	out.println("FirstName is :"+" "+fname);
+//	out.println("LastName is:"+" "+lname);
+//	
+//	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		resp.setContentType("text/html");
+		PrintWriter out=resp.getWriter();
+		
+		String fname=req.getParameter("fname");
+		String lname=req.getParameter("lname");
+		out.println("<html><body>"+"<h1>"+"My name is "+fname+" "+lname+"</h1>"+"</body></html>");
+		
+		resp.encodeRedirectUrl("http://www.google.com");
+		System.out.println("This is From POST method");
+		System.out.println("FirstName is :"+" "+fname);
+		System.out.println("LastName is:"+" "+lname);
+		
+	}
+}
